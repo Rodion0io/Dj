@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from firstapp.views import lox
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('loshara/',lox), #http://127.0.0.1:8000/loshara/
+
 ]
